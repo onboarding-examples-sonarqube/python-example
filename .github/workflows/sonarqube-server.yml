@@ -17,7 +17,8 @@ jobs:
       with:
         # Disabling shallow clones is recommended for improving the relevancy of reporting
         fetch-depth: 0
-    - name: Set Project Key
+    - name: Set Project Key/Name
+      # This step sets the project key and name based on the repository name and the organization name.
       id: set-project-key
       run: |
         echo "PROJECT_KEY=$(echo ${{ github.repository }} | cut -d'/' -f1)-gh_$(echo ${{ github.repository }} | cut -d'/' -f2)" >> $GITHUB_ENV
