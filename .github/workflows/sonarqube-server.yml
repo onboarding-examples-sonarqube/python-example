@@ -33,4 +33,4 @@ jobs:
           -Dsonar.verbose=true
           -Dsonar.sources=src/
           -Dsonar.projectKey=${PROJECT_KEY}
-          -Dsonar.projectName=${PROJECT_KEY}
+          -Dsonar.projectName="Onboarding Example - GitHub - Python Example"

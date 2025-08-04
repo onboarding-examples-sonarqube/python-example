@@ -15,7 +15,7 @@ We have multiple CI/CD Pipeline examples, one for connecting to SonarQube Server
     - SonarQube Cloud Example: [sonarqube-cloud.yml](.github/workflows/sonarqube-cloud.yml)  
     - SonarQube Server Example: [sonarqube-server.yml](.github/workflows/sonarqube-server.yml) 
 - The version being used for `sonarqube-scan-action` is `v5`. The major version of the task is being used in order to not have to change the version constantly in your pipeline and setting the version this way will always use the latest version from the `v5` subversions. Ex, if `v5` set and latest is `v5.1.0`, it will use this latest and if it changes to `v5.2.0`, it will automatically use that one when it gets added.
-- For both `sonar.projectKey` and `sonarprojectName`, we are using the following `$(echo ${{ github.repository }} | cut -d'/' -f1)-gh_$(echo ${{ github.repository }}` as naming convention. This results in `OrgName-gh_RepoName`.
+- For `sonar.projectKey`, we are using the following `$(echo ${{ github.repository }} | cut -d'/' -f1)-gh_$(echo ${{ github.repository }}` as naming convention. This results in `OrgName-gh_RepoName`.
 - Please make sure you have set up your `SONAR_TOKEN` and `SONAR_HOST_URL` secrets or variables. In the command used, `SONAR_TOKEN` is set up as a secret and `SONAR_HOST_URL` is set a variable. If set up differently please change the prefix in the respective parameter.   
 
 ## Important Links
