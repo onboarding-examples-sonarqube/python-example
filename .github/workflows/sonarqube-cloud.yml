@@ -33,4 +33,4 @@ jobs:
           -Dsonar.sources=src/
           -Dsonar.organization=github-onboarding-examples
           -Dsonar.projectKey=${PROJECT_KEY}
-          -Dsonar.projectName=${PROJECT_KEY}
+          -Dsonar.projectName="Onboarding Example - GitHub - Python Example"
