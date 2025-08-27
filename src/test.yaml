@@ -16,3 +16,4 @@ role_map:
     sql_role_name: db_reader
     ttl: 1800
     max_ttl: 10000
+password: "rIpejdn12.56bT^"
