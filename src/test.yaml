@@ -1,0 +1,18 @@
+name: sbxmisc
+environment: sbx
+server_name: "sbxmisc-db2.tempus.local"
+database_name: helpdeskdevdb
+credentials:
+  username: "vaulthelpdeskdev"
+  password: "TerraformTest33445!"
+role_map:
+  db_approle:
+    role_type: static
+    username: db_approle_user
+    sql_role_name: db_approle
+    ttl: 1800
+  db_reader:
+    role_type: dynamic
+    sql_role_name: db_reader
+    ttl: 1800
+    max_ttl: 10000
