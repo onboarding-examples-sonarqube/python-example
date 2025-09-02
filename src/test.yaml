@@ -4,7 +4,7 @@ server_name: "sbxmisc-db2.tempus.local"
 database_name: helpdeskdevdb
 credentials:
   username: "vaulthelpdeskdev"
-  password: "fjfdWER538!@Mm!"
+  password: "TerraformTest33445!"
 role_map:
   db_approle:
     role_type: static
