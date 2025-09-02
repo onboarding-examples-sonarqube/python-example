@@ -22,7 +22,7 @@ jobs:
       id: set-project-key
       run: |
         echo "PROJECT_KEY=$(echo ${{ github.repository }} | cut -d'/' -f1)-gh_$(echo ${{ github.repository }} | cut -d'/' -f2)" >> $GITHUB_ENV
-        echo ${PROJECT_KEY}
+        echo "${PROJECT_KEY}"
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@v5 # Ex: v4.1.0, See the latest version at https://github.com/marketplace/actions/official-sonarqube-scan
       env:
