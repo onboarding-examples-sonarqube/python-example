@@ -1,0 +1,35 @@
+# Alternative requirements.txt with various license types for license checking demo
+# This file demonstrates different license categories that SonarQube Advanced Security can track
+
+# GPL Licensed packages (Copyleft - may require source disclosure)
+# Note: These are example packages that may have GPL licenses in their dependency tree
+matplotlib==3.5.0  # BSD-style, but may pull GPL dependencies
+scipy==1.7.0       # BSD, but may have GPL components in dependency tree
+
+# Commercial/Proprietary license examples
+# (These are hypothetical - replace with actual commercial packages you want to test)
+# some-commercial-package==1.0.0
+
+# Permissive licenses (generally safe)
+numpy==1.21.0      # BSD License
+pandas==1.3.0      # BSD License  
+click==8.0.0       # BSD License
+
+# LGPL Licensed packages (Lesser GPL - library usage generally OK)
+# psycopg2==2.8.6   # LGPL License (PostgreSQL adapter)
+
+# Apache 2.0 Licensed packages (permissive with patent grant)
+certifi==2021.5.30    # MPL-2.0
+charset-normalizer==2.0.12  # MIT
+idna==3.2         # BSD-like
+
+# MIT Licensed packages (very permissive)
+six==1.16.0       # MIT
+python-dateutil==2.8.2  # Apache/BSD dual license
+
+# Creative Commons and other licenses
+# (Uncomment if you want to test specific license detection)
+# some-cc-licensed-package==1.0.0
+
+# Note: License detection depends on package metadata and dependency analysis
+# SonarQube Advanced Security will scan the entire dependency tree for license information
