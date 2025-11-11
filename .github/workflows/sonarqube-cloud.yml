@@ -30,6 +30,7 @@ jobs:
       with:
         args: >
           -Dsonar.verbose=true
+          -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.sources=src/
           -Dsonar.organization=github-onboarding-examples
           -Dsonar.projectKey=${{ env.PROJECT_KEY }}
