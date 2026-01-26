@@ -19,3 +19,7 @@ def search_first_number_without_break(elements: List[str]):
             return elt
     else:  # Noncompliant. This will be executed every time
         raise ValueError("List does not contain any number")
+
+
+if not a == 2:        # Noncompliant
+    b = not i < 10    # Noncompliant
